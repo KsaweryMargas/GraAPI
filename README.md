@@ -1,3 +1,3 @@
 - Aplikacja Webowa (ASP.NET Core API):
 ---
-   - Pomysł: Pomysł: GraAPI.
+   - Pomysł: GraAPI.
