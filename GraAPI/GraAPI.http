@@ -1,0 +1,6 @@
+@GraAPI_HostAddress = http://localhost:5092
+
+GET {{GraAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
