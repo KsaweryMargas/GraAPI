@@ -1,1 +1,3 @@
-# GraAPI
+- Aplikacja Webowa (ASP.NET Core API):
+---
+   - Pomysł: GraAPI.
