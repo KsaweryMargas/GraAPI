@@ -1,16 +1,20 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace GraAPI;
 
 public class GryDb : DbContext
 {
+    // Konfiguracja ustawień bazy danych
     public GryDb(DbContextOptions<GryDb> options) : base(options)
     {
 
     }
 
+    // Konfiguracja początkowych danych dla bazy
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        // Dodanwanie danych na początek
         modelBuilder.Entity<Gry>().HasData(
             new Gry { Id = 1, Tytul = "Wiedźmin 3", Tag = "RPG" },
             new Gry { Id = 2, Tytul = "FIFA 23", Tag = "Sportowe" },
@@ -35,5 +39,6 @@ public class GryDb : DbContext
         );
     }
 
+    // Definicja tabeli bazy danych w modelu
     public DbSet<Gry> WszystkieGry { get; set; } = null!;
 }
